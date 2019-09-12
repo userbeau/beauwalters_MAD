@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weC-fk-JfN">
+                                <rect key="frame" x="156" y="54" width="102" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LAB 1">
+                                        <attributes>
+                                            <font key="NSFont" size="35" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOx-aj-XVA">
+                                <rect key="frame" x="120" y="95" width="174" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Change Text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UiB-Yh-0BM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-jP-G6Z">
+                                <rect key="frame" x="207" y="593.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="dRx-Dg-5Cg">
+                                <rect key="frame" x="10" y="245" width="394" height="318.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dRx-Dg-5Cg" secondAttribute="height" multiplier="229:185" id="jZh-Ac-wp3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLg-vU-ofy">
+                                <rect key="frame" x="153.5" y="149.5" width="107.5" height="32.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="I am text">
+                                        <attributes>
+                                            <font key="NSFont" size="28" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY6-NV-3vT">
+                                <rect key="frame" x="105" y="189" width="204" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Change Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWi-lo-7Ce"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uOx-aj-XVA" firstAttribute="top" secondItem="weC-fk-JfN" secondAttribute="bottom" id="6I0-sl-BZg"/>
+                            <constraint firstItem="weC-fk-JfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BAd-46-ndy"/>
+                            <constraint firstItem="dRx-Dg-5Cg" firstAttribute="top" secondItem="JY6-NV-3vT" secondAttribute="bottom" constant="8" id="C6G-NJ-hhV"/>
+                            <constraint firstItem="JY6-NV-3vT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CAs-b4-3dN"/>
+                            <constraint firstItem="dRx-Dg-5Cg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-20" id="CHM-op-tcm"/>
+                            <constraint firstItem="dRx-Dg-5Cg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GvL-1n-Tnw"/>
+                            <constraint firstItem="ZER-jP-G6Z" firstAttribute="top" secondItem="dRx-Dg-5Cg" secondAttribute="bottom" constant="30" id="OAL-FZ-ufA"/>
+                            <constraint firstItem="oLg-vU-ofy" firstAttribute="top" secondItem="uOx-aj-XVA" secondAttribute="bottom" constant="6.5" id="SsD-9z-5Jm"/>
+                            <constraint firstItem="uOx-aj-XVA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dGp-Ud-aeX"/>
+                            <constraint firstItem="JY6-NV-3vT" firstAttribute="top" secondItem="oLg-vU-ofy" secondAttribute="bottom" constant="7" id="kZq-02-3Ii"/>
+                            <constraint firstItem="oLg-vU-ofy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzY-1a-ObD"/>
+                            <constraint firstItem="weC-fk-JfN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="opj-s2-8B8"/>
+                            <constraint firstItem="ZER-jP-G6Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wE1-j8-tao"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageOut" destination="dRx-Dg-5Cg" id="fmy-72-ZSd"/>
+                        <outlet property="textOut" destination="oLg-vU-ofy" id="lOi-SX-2cY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image1" width="458" height="370"/>
+    </resources>
+</document>
