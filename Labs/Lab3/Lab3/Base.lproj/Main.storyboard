@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="britney3" translatesAutoresizingMaskIntoConstraints="NO" id="bY9-9z-wpw">
-                                <rect key="frame" x="115.66666666666669" y="65" width="143.66666666666663" height="150"/>
+                                <rect key="frame" x="115.66666666666667" y="65" width="143.66666666666663" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bY9-9z-wpw" secondAttribute="height" multiplier="114:119" id="6eV-8M-eDU"/>
                                     <constraint firstAttribute="height" constant="150" id="FgI-r8-R4L"/>
@@ -50,7 +50,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="axp-xh-jmm">
-                                        <rect key="frame" x="66.666666666666686" y="62" width="209.66666666666663" height="31"/>
+                                        <rect key="frame" x="66.666666666666671" y="62" width="209.66666666666663" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB4-KR-chq">
                                                 <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="31"/>
@@ -89,7 +89,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zgw-kp-hfn" firstAttribute="top" secondItem="bY9-9z-wpw" secondAttribute="bottom" constant="81" id="4J3-e5-9Gx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zgw-kp-hfn" secondAttribute="bottom" constant="54" id="632-gE-vQK"/>
