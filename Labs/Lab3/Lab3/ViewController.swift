@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var capitalSwitch: UISwitch!
     @IBOutlet weak var slidervalue: UISlider!
     @IBOutlet weak var fontSizeLabel: UILabel!
+    @IBOutlet weak var colorSwitch: UISwitch!
     @IBAction func changeFont(_ sender: UISlider) {
         let fontSize = sender.value
         let fontSizeCGFloat = CGFloat(fontSize)
@@ -35,6 +36,13 @@ class ViewController: UIViewController {
         }else if imageControl.selectedSegmentIndex==1{
             britneyLabel.text="Bye Bye Bye"
             britneyImg.image = UIImage(named: "britney2.jpg")
+        }
+    }
+    @IBAction func changeTextColor(_ sender: UISwitch) {
+        if colorSwitch.isOn {
+            britneyLabel.textColor = UIColor.yellow;
+        }else {
+            britneyLabel.textColor = UIColor.white;
         }
     }
     override func viewDidLoad() {
