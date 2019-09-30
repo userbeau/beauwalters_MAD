@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE792DA323414B160086102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE792DA223414B160086102F /* AppDelegate.swift */; };
+		DE792DA523414B160086102F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE792DA423414B160086102F /* ViewController.swift */; };
+		DE792DA823414B160086102F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE792DA623414B160086102F /* Main.storyboard */; };
+		DE792DAA23414B170086102F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE792DA923414B170086102F /* Assets.xcassets */; };
+		DE792DAD23414B170086102F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE792DAB23414B170086102F /* LaunchScreen.storyboard */; };
+		DE792DB623414B460086102F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE792DB523414B460086102F /* AVFoundation.framework */; };
+		DE792DB823414BC20086102F /* 808.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DB723414BC20086102F /* 808.wav */; };
+		DE792DBC23414F2A0086102F /* highhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DBB23414F2A0086102F /* highhat.wav */; };
+		DE792DBE23414F340086102F /* cowbell.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DBD23414F340086102F /* cowbell.wav */; };
+		DE792DC023414F530086102F /* kick-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DBF23414F530086102F /* kick-1.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE792D9F23414B160086102F /* beat-maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "beat-maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE792DA223414B160086102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE792DA423414B160086102F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE792DA723414B160086102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE792DA923414B170086102F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE792DAC23414B170086102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE792DAE23414B170086102F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE792DB523414B460086102F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DE792DB723414BC20086102F /* 808.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 808.wav; path = ../../../../../Object/captouchtest/808.wav; sourceTree = "<group>"; };
+		DE792DBA23414BE10086102F /* 808.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 808.wav; sourceTree = "<group>"; };
+		DE792DBB23414F2A0086102F /* highhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = highhat.wav; path = ../../../../../../Object/captouchtest/highhat.wav; sourceTree = "<group>"; };
+		DE792DBD23414F340086102F /* cowbell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = cowbell.wav; path = ../../../../../../Object/captouchtest/cowbell.wav; sourceTree = "<group>"; };
+		DE792DBF23414F530086102F /* kick-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "kick-1.wav"; path = "../../../../../../Object/captouchtest/kick-1.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE792D9C23414B160086102F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE792DB623414B460086102F /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE792D9623414B160086102F = {
+			isa = PBXGroup;
+			children = (
+				DE792DA123414B160086102F /* beat-maker */,
+				DE792DA023414B160086102F /* Products */,
+				DE792DB423414B450086102F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE792DA023414B160086102F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE792D9F23414B160086102F /* beat-maker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE792DA123414B160086102F /* beat-maker */ = {
+			isa = PBXGroup;
+			children = (
+				DE792DA223414B160086102F /* AppDelegate.swift */,
+				DE792DA423414B160086102F /* ViewController.swift */,
+				DE792DA623414B160086102F /* Main.storyboard */,
+				DE792DA923414B170086102F /* Assets.xcassets */,
+				DE792DAB23414B170086102F /* LaunchScreen.storyboard */,
+				DE792DAE23414B170086102F /* Info.plist */,
+				DE792DB723414BC20086102F /* 808.wav */,
+				DE792DB923414BD10086102F /* Sounds */,
+			);
+			path = "beat-maker";
+			sourceTree = "<group>";
+		};
+		DE792DB423414B450086102F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE792DB523414B460086102F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE792DB923414BD10086102F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DE792DBF23414F530086102F /* kick-1.wav */,
+				DE792DBD23414F340086102F /* cowbell.wav */,
+				DE792DBB23414F2A0086102F /* highhat.wav */,
+				DE792DBA23414BE10086102F /* 808.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE792D9E23414B160086102F /* beat-maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE792DB123414B170086102F /* Build configuration list for PBXNativeTarget "beat-maker" */;
+			buildPhases = (
+				DE792D9B23414B160086102F /* Sources */,
+				DE792D9C23414B160086102F /* Frameworks */,
+				DE792D9D23414B160086102F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "beat-maker";
+			productName = "beat-maker";
+			productReference = DE792D9F23414B160086102F /* beat-maker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE792D9723414B160086102F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Beau Walters";
+				TargetAttributes = {
+					DE792D9E23414B160086102F = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = DE792D9A23414B160086102F /* Build configuration list for PBXProject "beat-maker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE792D9623414B160086102F;
+			productRefGroup = DE792DA023414B160086102F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE792D9E23414B160086102F /* beat-maker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE792D9D23414B160086102F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE792DC023414F530086102F /* kick-1.wav in Resources */,
+				DE792DAD23414B170086102F /* LaunchScreen.storyboard in Resources */,
+				DE792DAA23414B170086102F /* Assets.xcassets in Resources */,
+				DE792DBC23414F2A0086102F /* highhat.wav in Resources */,
+				DE792DA823414B160086102F /* Main.storyboard in Resources */,
+				DE792DB823414BC20086102F /* 808.wav in Resources */,
+				DE792DBE23414F340086102F /* cowbell.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE792D9B23414B160086102F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE792DA523414B160086102F /* ViewController.swift in Sources */,
+				DE792DA323414B160086102F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE792DA623414B160086102F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE792DA723414B160086102F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE792DAB23414B170086102F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE792DAC23414B170086102F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE792DAF23414B170086102F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE792DB023414B170086102F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE792DB223414B170086102F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3399D288QG;
+				INFOPLIST_FILE = "beat-maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beauwalters.beat-maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE792DB323414B170086102F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3399D288QG;
+				INFOPLIST_FILE = "beat-maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beauwalters.beat-maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE792D9A23414B160086102F /* Build configuration list for PBXProject "beat-maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE792DAF23414B170086102F /* Debug */,
+				DE792DB023414B170086102F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE792DB123414B170086102F /* Build configuration list for PBXNativeTarget "beat-maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE792DB223414B170086102F /* Debug */,
+				DE792DB323414B170086102F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE792D9723414B160086102F /* Project object */;
+}
