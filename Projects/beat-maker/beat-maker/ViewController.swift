@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         audioPlayer1.play()
         drumButton.backgroundColor = UIColor .red
     }
-    @IBAction func drumReleased(_ sender: Any) {
+    @IBAction func drumReleased(_ sender: UIButton) {
         
         drumButton.backgroundColor = UIColor .blue
     }

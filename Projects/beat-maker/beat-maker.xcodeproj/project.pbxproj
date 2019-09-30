@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE5BBD182342712500CEA5F6 /* 808.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE5BBD172342712500CEA5F6 /* 808.wav */; };
 		DE792DA323414B160086102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE792DA223414B160086102F /* AppDelegate.swift */; };
 		DE792DA523414B160086102F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE792DA423414B160086102F /* ViewController.swift */; };
 		DE792DA823414B160086102F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE792DA623414B160086102F /* Main.storyboard */; };
 		DE792DAA23414B170086102F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE792DA923414B170086102F /* Assets.xcassets */; };
 		DE792DAD23414B170086102F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE792DAB23414B170086102F /* LaunchScreen.storyboard */; };
 		DE792DB623414B460086102F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE792DB523414B460086102F /* AVFoundation.framework */; };
-		DE792DB823414BC20086102F /* 808.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DB723414BC20086102F /* 808.wav */; };
 		DE792DBC23414F2A0086102F /* highhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DBB23414F2A0086102F /* highhat.wav */; };
 		DE792DBE23414F340086102F /* cowbell.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DBD23414F340086102F /* cowbell.wav */; };
 		DE792DC023414F530086102F /* kick-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE792DBF23414F530086102F /* kick-1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE5BBD172342712500CEA5F6 /* 808.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 808.wav; path = ../../../../../../Object/captouchtest/808.wav; sourceTree = "<group>"; };
 		DE792D9F23414B160086102F /* beat-maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "beat-maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE792DA223414B160086102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE792DA423414B160086102F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +29,6 @@
 		DE792DAC23414B170086102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE792DAE23414B170086102F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE792DB523414B460086102F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		DE792DB723414BC20086102F /* 808.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 808.wav; path = ../../../../../Object/captouchtest/808.wav; sourceTree = "<group>"; };
-		DE792DBA23414BE10086102F /* 808.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 808.wav; sourceTree = "<group>"; };
 		DE792DBB23414F2A0086102F /* highhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = highhat.wav; path = ../../../../../../Object/captouchtest/highhat.wav; sourceTree = "<group>"; };
 		DE792DBD23414F340086102F /* cowbell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = cowbell.wav; path = ../../../../../../Object/captouchtest/cowbell.wav; sourceTree = "<group>"; };
 		DE792DBF23414F530086102F /* kick-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "kick-1.wav"; path = "../../../../../../Object/captouchtest/kick-1.wav"; sourceTree = "<group>"; };
@@ -73,7 +72,6 @@
 				DE792DA923414B170086102F /* Assets.xcassets */,
 				DE792DAB23414B170086102F /* LaunchScreen.storyboard */,
 				DE792DAE23414B170086102F /* Info.plist */,
-				DE792DB723414BC20086102F /* 808.wav */,
 				DE792DB923414BD10086102F /* Sounds */,
 			);
 			path = "beat-maker";
@@ -90,10 +88,10 @@
 		DE792DB923414BD10086102F /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DE5BBD172342712500CEA5F6 /* 808.wav */,
 				DE792DBF23414F530086102F /* kick-1.wav */,
 				DE792DBD23414F340086102F /* cowbell.wav */,
 				DE792DBB23414F2A0086102F /* highhat.wav */,
-				DE792DBA23414BE10086102F /* 808.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -159,9 +157,9 @@
 				DE792DC023414F530086102F /* kick-1.wav in Resources */,
 				DE792DAD23414B170086102F /* LaunchScreen.storyboard in Resources */,
 				DE792DAA23414B170086102F /* Assets.xcassets in Resources */,
+				DE5BBD182342712500CEA5F6 /* 808.wav in Resources */,
 				DE792DBC23414F2A0086102F /* highhat.wav in Resources */,
 				DE792DA823414B160086102F /* Main.storyboard in Resources */,
-				DE792DB823414BC20086102F /* 808.wav in Resources */,
 				DE792DBE23414F340086102F /* cowbell.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
