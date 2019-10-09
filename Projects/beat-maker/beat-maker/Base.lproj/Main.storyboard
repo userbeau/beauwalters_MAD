@@ -30,8 +30,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzU-Gr-RC2">
                                 <rect key="frame" x="65" y="187" width="122" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="808"/>
+                                <color key="backgroundColor" red="0.93355411291122437" green="0.70223098993301392" blue="0.93167179822921753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="808">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="drumDown:" destination="BYZ-38-t0r" eventType="touchDown" id="1YR-82-lmT"/>
                                     <action selector="drumReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlf-en-4wd"/>
@@ -40,8 +42,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgw-2o-Bsc">
                                 <rect key="frame" x="230" y="187" width="122" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.64706861469999999" green="0.59956902700000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="kick"/>
+                                <color key="backgroundColor" red="0.61910885572433472" green="0.91328293085098267" blue="0.55742490291595459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="kick">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="kickDown:" destination="BYZ-38-t0r" eventType="touchDown" id="goW-g4-8xU"/>
                                     <action selector="kickReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KnF-pz-9DQ"/>
@@ -51,7 +55,9 @@
                                 <rect key="frame" x="65" y="515" width="122" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="cowbell"/>
+                                <state key="normal" title="cowbell">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="cowDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Arf-5C-647"/>
                                     <action selector="cowReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o97-ca-pqg"/>
@@ -61,7 +67,9 @@
                                 <rect key="frame" x="230" y="515" width="122" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="high hat"/>
+                                <state key="normal" title="high hat">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="hatDown:" destination="BYZ-38-t0r" eventType="touchDown" id="HgU-JC-3cR"/>
                                     <action selector="hatReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLR-Hx-Wf7"/>
@@ -73,13 +81,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="olL-sf-fAC">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="olL-sf-fAC">
                                 <rect key="frame" x="147" y="812" width="121" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="drums"/>
                                     <segment title="piano"/>
+                                    <segment title="drums"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeSound:" destination="BYZ-38-t0r" eventType="valueChanged" id="nTF-v0-xQP"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,10 +101,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="drumButton" destination="OzU-Gr-RC2" id="MB0-if-8z3"/>
+                        <outlet property="drumButton1" destination="OzU-Gr-RC2" id="MB0-if-8z3"/>
                         <outlet property="drumButton2" destination="hgw-2o-Bsc" id="4Cu-iW-JDL"/>
                         <outlet property="drumButton3" destination="Rl6-lb-Rj5" id="zUP-Pg-vUc"/>
                         <outlet property="drumButton4" destination="Nx7-2c-yqx" id="qjh-Ah-gj8"/>
+                        <outlet property="segmentedControl" destination="olL-sf-fAC" id="M1w-3t-hWL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
