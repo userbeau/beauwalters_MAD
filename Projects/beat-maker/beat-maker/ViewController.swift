@@ -114,7 +114,7 @@ class ViewController: UIViewController {
     @IBAction func changeSound(_ sender: UISegmentedControl) {
         
         // if drums is selected set button sounds to drums
-        //else if piano is selected set sounds to piano
+        //if piano is selected set sounds to piano
         
         switch sender.selectedSegmentIndex{
         case 0:
