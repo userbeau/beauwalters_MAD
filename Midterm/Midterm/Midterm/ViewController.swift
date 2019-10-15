@@ -24,6 +24,8 @@ class ViewController: UIViewController {
 //    var busMPH:Float = 12.5
     
     override func viewDidLoad() {
+        totalTime.text = nil
+        gasPurchase.text = nil
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
