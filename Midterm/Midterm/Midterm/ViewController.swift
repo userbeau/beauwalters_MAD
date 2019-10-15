@@ -31,6 +31,15 @@ class ViewController: UIViewController {
     @IBAction func calculateValues(_ sender: UIButton) {
         if segmentedControl.selectedSegmentIndex == 0{
             
+            let alert=UIAlertController(title: "Warning", message: "Try carpooling", preferredStyle: UIAlertController.Style.alert)
+            let cancelAction=UIAlertAction(title: "Cancel", style:UIAlertAction.Style.cancel, handler: nil)
+            alert.addAction(cancelAction) //adds the alert action to the alert object
+            
+            let okAction=UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {action in
+            })
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            
             var amountMiles:Float // miles
             var amountGas:Float // gas
             
@@ -51,6 +60,7 @@ class ViewController: UIViewController {
             
             imageView.image=UIImage(named: "car_icon")
         } else if segmentedControl.selectedSegmentIndex == 1{
+            
             
             var amountMiles:Float // miles
             var amountGas:Float // gas
@@ -121,6 +131,14 @@ class ViewController: UIViewController {
 //
         if monthlyCommute.isOn{
             if segmentedControl.selectedSegmentIndex == 0{
+                let alert=UIAlertController(title: "Warning", message: "Try carpooling", preferredStyle: UIAlertController.Style.alert)
+                let cancelAction=UIAlertAction(title: "Cancel", style:UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(cancelAction) //adds the alert action to the alert object
+                
+                let okAction=UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {action in
+                })
+                alert.addAction(okAction)
+                present(alert, animated: true, completion: nil)
                 
                 var amountMiles:Float // miles
                 var amountGas:Float // gas
@@ -179,6 +197,14 @@ class ViewController: UIViewController {
             }
         } else {
             if segmentedControl.selectedSegmentIndex == 0{
+                let alert=UIAlertController(title: "Warning", message: "Try carpooling", preferredStyle: UIAlertController.Style.alert)
+                let cancelAction=UIAlertAction(title: "Cancel", style:UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(cancelAction) //adds the alert action to the alert object
+                
+                let okAction=UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {action in
+                })
+                alert.addAction(okAction)
+                present(alert, animated: true, completion: nil)
                 
                 var amountMiles:Float // miles
                 var amountGas:Float // gas
@@ -243,6 +269,14 @@ class ViewController: UIViewController {
     
     @IBAction func segCntrlChanged(_ sender: UISegmentedControl) {
         if segmentedControl.selectedSegmentIndex == 0{
+            let alert=UIAlertController(title: "Warning", message: "Try carpooling", preferredStyle: UIAlertController.Style.alert)
+            let cancelAction=UIAlertAction(title: "Cancel", style:UIAlertAction.Style.cancel, handler: nil)
+            alert.addAction(cancelAction) //adds the alert action to the alert object
+            
+            let okAction=UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {action in
+            })
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
             
             var amountMiles:Float // miles
             var amountGas:Float // gas
