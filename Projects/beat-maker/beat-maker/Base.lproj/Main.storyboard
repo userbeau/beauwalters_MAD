@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="beat_maker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rl6-lb-Rj5">
-                                <rect key="frame" x="22" y="248" width="130" height="130"/>
+                                <rect key="frame" x="22" y="272" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="DKy-L1-7ux"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-2c-yqx">
-                                <rect key="frame" x="158" y="248" width="130" height="130"/>
+                                <rect key="frame" x="252" y="272" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="2Kl-Bn-Pz6"/>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="olL-sf-fAC">
-                                <rect key="frame" x="107" y="494" width="106" height="29"/>
+                                <rect key="frame" x="107" y="788" width="200" height="29"/>
                                 <segments>
                                     <segment title="piano"/>
                                     <segment title="drums"/>
@@ -91,13 +91,13 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beat Maker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0n-rY-CRq">
-                                <rect key="frame" x="44" y="34" width="232" height="51"/>
+                                <rect key="frame" x="91" y="58" width="232" height="51"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgw-2o-Bsc">
-                                <rect key="frame" x="158" y="110" width="130" height="130"/>
+                                <rect key="frame" x="252" y="134" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.61910885572433472" green="0.91328293085098267" blue="0.55742490291595459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="1NX-uC-AIA"/>
@@ -132,7 +132,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzU-Gr-RC2">
-                                <rect key="frame" x="20" y="110" width="130" height="130"/>
+                                <rect key="frame" x="20" y="134" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.93355411291122437" green="0.70223098993301392" blue="0.93167179822921753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="WY0-sh-hUW"/>
@@ -198,9 +198,7 @@
                             <constraint firstItem="olL-sf-fAC" firstAttribute="top" secondItem="OzU-Gr-RC2" secondAttribute="bottom" constant="68.5" id="r5J-Db-sAL"/>
                             <constraint firstItem="olL-sf-fAC" firstAttribute="top" secondItem="hgw-2o-Bsc" secondAttribute="bottom" constant="67.5" id="rih-K1-INJ"/>
                             <constraint firstItem="f0n-rY-CRq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="thF-Zu-4O9"/>
-                            <constraint firstItem="hgw-2o-Bsc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rl6-lb-Rj5" secondAttribute="trailing" constant="17" id="tsf-mz-jzK">
-                                <variation key="heightClass=compact-widthClass=compact" symbolic="YES"/>
-                            </constraint>
+                            <constraint firstItem="hgw-2o-Bsc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rl6-lb-Rj5" secondAttribute="trailing" constant="17" id="tsf-mz-jzK"/>
                             <constraint firstItem="Rl6-lb-Rj5" firstAttribute="top" secondItem="OzU-Gr-RC2" secondAttribute="bottom" constant="8" id="uey-pD-UEy"/>
                             <constraint firstItem="Nx7-2c-yqx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vHG-dI-aTl"/>
                             <constraint firstItem="hgw-2o-Bsc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OzU-Gr-RC2" secondAttribute="trailing" constant="8" symbolic="YES" id="wD7-nM-zmq"/>
@@ -214,19 +212,19 @@
                                 <exclude reference="Qhj-8G-W2u"/>
                                 <exclude reference="njN-NZ-3cn"/>
                                 <exclude reference="yG0-3T-DnX"/>
-                                <exclude reference="XIs-Jn-TwK"/>
-                                <exclude reference="kuW-iR-fvh"/>
-                                <exclude reference="vHG-dI-aTl"/>
+                                <exclude reference="TmP-oe-RDw"/>
+                                <exclude reference="b5Q-zo-Sxp"/>
+                                <exclude reference="tsf-mz-jzK"/>
                                 <exclude reference="AP0-1C-MMD"/>
                                 <exclude reference="Jtv-1n-UZJ"/>
                                 <exclude reference="bAh-bv-fUf"/>
+                                <exclude reference="XIs-Jn-TwK"/>
+                                <exclude reference="kuW-iR-fvh"/>
+                                <exclude reference="vHG-dI-aTl"/>
                                 <exclude reference="LNG-RN-zBH"/>
                                 <exclude reference="R5G-p9-XUX"/>
                                 <exclude reference="r5J-Db-sAL"/>
                                 <exclude reference="rih-K1-INJ"/>
-                                <exclude reference="TmP-oe-RDw"/>
-                                <exclude reference="b5Q-zo-Sxp"/>
-                                <exclude reference="tsf-mz-jzK"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -241,25 +239,25 @@
                                 <exclude reference="kjE-p6-zFG"/>
                                 <include reference="njN-NZ-3cn"/>
                                 <include reference="yG0-3T-DnX"/>
-                                <exclude reference="U1B-uY-meD"/>
-                                <exclude reference="U40-GP-DSG"/>
-                                <include reference="XIs-Jn-TwK"/>
-                                <include reference="kuW-iR-fvh"/>
-                                <include reference="vHG-dI-aTl"/>
-                                <include reference="AP0-1C-MMD"/>
-                                <include reference="Jtv-1n-UZJ"/>
-                                <include reference="bAh-bv-fUf"/>
-                                <exclude reference="jyN-Dg-zej"/>
-                                <exclude reference="uey-pD-UEy"/>
-                                <include reference="LNG-RN-zBH"/>
-                                <include reference="R5G-p9-XUX"/>
-                                <include reference="r5J-Db-sAL"/>
-                                <include reference="rih-K1-INJ"/>
                                 <exclude reference="AnD-rb-7Em"/>
                                 <include reference="TmP-oe-RDw"/>
                                 <include reference="b5Q-zo-Sxp"/>
                                 <include reference="tsf-mz-jzK"/>
                                 <exclude reference="wD7-nM-zmq"/>
+                                <include reference="AP0-1C-MMD"/>
+                                <include reference="Jtv-1n-UZJ"/>
+                                <include reference="bAh-bv-fUf"/>
+                                <exclude reference="jyN-Dg-zej"/>
+                                <exclude reference="uey-pD-UEy"/>
+                                <exclude reference="U1B-uY-meD"/>
+                                <exclude reference="U40-GP-DSG"/>
+                                <include reference="XIs-Jn-TwK"/>
+                                <include reference="kuW-iR-fvh"/>
+                                <include reference="vHG-dI-aTl"/>
+                                <include reference="LNG-RN-zBH"/>
+                                <include reference="R5G-p9-XUX"/>
+                                <include reference="r5J-Db-sAL"/>
+                                <include reference="rih-K1-INJ"/>
                             </mask>
                         </variation>
                     </view>
