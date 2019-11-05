@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         //textView
         TextView nameText = findViewById(R.id.textView);
-        nameText.setText(nameValue);
+        nameText.setText("Your name is " + nameValue + " and this is a Fedora.");
 
         //imageView
         ImageView image1 = findViewById(R.id.image1);
