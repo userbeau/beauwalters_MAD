@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">beat-maker-android</string>
+    <string name="headline">Beat Maker</string>
+    <string name="eight">808</string>
+    <string name="cowbell">cowbell</string>
+    <string name="highhat">highhat</string>
+    <string name="kick">kick</string>
+</resources>

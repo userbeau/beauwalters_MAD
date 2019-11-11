@@ -23,12 +23,13 @@
 
     <TextView
         android:id="@+id/bikekind"
-        android:layout_width="211dp"
-        android:layout_height="0dp"
+        android:layout_width="309dp"
+        android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:text="@string/choosebiketype"
         android:textAlignment="center"
         android:textColor="#000000"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/maintitle" />
@@ -39,6 +40,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

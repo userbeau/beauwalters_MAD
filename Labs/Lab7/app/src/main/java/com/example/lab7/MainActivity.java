@@ -34,7 +34,7 @@ public class MainActivity<bikeS> extends AppCompatActivity {
 
         String numMiles = String.valueOf(miles.getSelectedItem());
 
-        String bikeS = "init";
+        String bikeS = "";
 
 
             if (bike_id == -1) {
@@ -45,6 +45,7 @@ public class MainActivity<bikeS> extends AppCompatActivity {
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+                bikeSelected.setText("");
             }else {
                 if(bike_id == R.id.radioButton1){
 
@@ -93,8 +94,9 @@ public class MainActivity<bikeS> extends AppCompatActivity {
                     }
                     image.setImageResource(R.drawable.roadbike);
                 }
+                bikeSelected.setText("It will take you " + bikeS + " hours");
             }
-        bikeSelected.setText("It will take you " + bikeS + " hours");
+
         }
 
 
