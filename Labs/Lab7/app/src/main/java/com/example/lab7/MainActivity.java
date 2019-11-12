@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.RadioGroup;
@@ -17,6 +18,7 @@ public class MainActivity<bikeS> extends AppCompatActivity {
     private TextView bikeSelected;
     private Spinner miles;
     private ImageView image;
+    private EditText nameText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity<bikeS> extends AppCompatActivity {
         bikeSelected = findViewById(R.id.textView);
         miles = findViewById(R.id.spinner);
         image = findViewById(R.id.imageView);
+        nameText = findViewById(R.id.editText);
     }
 
     public void showBike(View view) {
@@ -94,7 +97,7 @@ public class MainActivity<bikeS> extends AppCompatActivity {
                     }
                     image.setImageResource(R.drawable.roadbike);
                 }
-                bikeSelected.setText("It will take you " + bikeS + " hours");
+                bikeSelected.setText(nameText.getText().toString() + "It will take you " + bikeS + " hours");
             }
 
         }

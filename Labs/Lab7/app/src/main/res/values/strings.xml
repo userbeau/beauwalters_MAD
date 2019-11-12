@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Lab7</string>
-    <string name="titletext">Calculate your bike trip</string>
+    <string name="titletext">Enter your name</string>
     <string name="choosebiketype">What kind of bike do you ride?</string>
     <string name="howmanymiles">How many miles will you ride?</string>
     <string name="roadbike">road</string>
+    <string name="name">name</string>
     <string name="mtnbike">mountain</string>
     <string name="answer"></string>
     <string name="submit">submit</string>
