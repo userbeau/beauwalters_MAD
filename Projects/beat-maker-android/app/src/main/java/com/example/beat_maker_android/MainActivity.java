@@ -13,6 +13,8 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         button1 = (Button)findViewById(R.id.eight);
         button2 = (Button)findViewById(R.id.cowbell);
         button3 = (Button)findViewById(R.id.highhat);
@@ -33,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.cowbell);
         final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.highhat);
         final MediaPlayer mp4 = MediaPlayer.create(this, R.raw.kick);
+
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

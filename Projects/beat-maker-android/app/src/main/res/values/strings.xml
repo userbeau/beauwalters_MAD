@@ -3,6 +3,7 @@
     <string name="headline">Beat Maker</string>
     <string name="eight">808</string>
     <string name="cowbell">cowbell</string>
-    <string name="highhat">highhat</string>
+    <string name="highhat">high hat</string>
     <string name="kick">kick</string>
+    <string name="piano">piano</string>
 </resources>

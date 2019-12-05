@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab8</string>
+    <string name="mainTitle">Bike Shop Finder</string>
+    <string name="bikePref">Choose your style</string>
+    <string name="button">Find your bike shop</string>
+    <string-array name="bikePeeps">
+        <item>Mountain</item>
+        <item>Road</item>
+        <item>BMX</item>
+        <item>Fixed-Gear</item>
+        <item>Electric</item>
+    </string-array>
+    <string name="bike_image">Bike</string>
+    <string name="title_activity_bike">BikeActivity</string>
+    <string name="suggested_bike">This is your suggested bike shop</string>
+</resources>
