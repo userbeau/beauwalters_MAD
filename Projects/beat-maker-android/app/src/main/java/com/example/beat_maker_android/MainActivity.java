@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
     private MediaPlayer mp7;
     private MediaPlayer mp8;
 
-//    private RadioButton checkedD;
-//    private RadioButton checkedP;
 
     private boolean drumBool = true;
     private boolean pianoBool = false;
@@ -52,9 +50,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        button1 = findViewById(R.id.eight);
+        button2 = findViewById(R.id.cowbell);
+        button3 = findViewById(R.id.highhat);
+        button4 = findViewById(R.id.kick);
+        button5 = findViewById(R.id.piano1);
+        button6 = findViewById(R.id.piano2);
+        button7 = findViewById(R.id.piano3);
+        button8 = findViewById(R.id.piano4);
 
-//        checkedD = findViewById(R.id.drums);
-//        checkedP = findViewById(R.id.piano);
 
         if (savedInstanceState != null) {
             drumBool = savedInstanceState.getBoolean("drums");
@@ -82,16 +86,13 @@ public class MainActivity extends AppCompatActivity {
                 button8.setVisibility(View.VISIBLE);
             }
 
+        } else {
+            button5.setVisibility(View.GONE);
+            button6.setVisibility(View.GONE);
+            button7.setVisibility(View.GONE);
+            button8.setVisibility(View.GONE);
         }
 
-        button1 = findViewById(R.id.eight);
-        button2 = findViewById(R.id.cowbell);
-        button3 = findViewById(R.id.highhat);
-        button4 = findViewById(R.id.kick);
-        button5 = findViewById(R.id.piano1);
-        button6 = findViewById(R.id.piano2);
-        button7 = findViewById(R.id.piano3);
-        button8 = findViewById(R.id.piano4);
         mp1 = MediaPlayer.create(this, R.raw.eight);
         mp2 = MediaPlayer.create(this, R.raw.cowbell);
         mp3 = MediaPlayer.create(this, R.raw.highhat);
@@ -153,11 +154,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        button5.setVisibility(View.GONE);
-        button6.setVisibility(View.GONE);
-        button7.setVisibility(View.GONE);
-        button8.setVisibility(View.GONE);
         }
 
 
