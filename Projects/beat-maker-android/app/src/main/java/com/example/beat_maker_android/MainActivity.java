@@ -2,15 +2,19 @@
 // https://developer.android.com/guide/topics/media/mediaplayer
 // https://stackoverflow.com/questions/18459122/play-sound-on-button-click-android
 // https://stackoverflow.com/questions/26538421/how-do-i-play-sound-on-button-click-in-android-studio
+// https://developer.android.com/guide/topics/ui/controls/radiobutton
+// https://stackoverflow.com/questions/6173400/how-to-hide-a-button-programmatically
 
 
 
 package com.example.beat_maker_android;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -36,11 +40,49 @@ public class MainActivity extends AppCompatActivity {
     private MediaPlayer mp7;
     private MediaPlayer mp8;
 
+//    private RadioButton checkedD;
+//    private RadioButton checkedP;
+
+    private boolean drumBool = true;
+    private boolean pianoBool = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+//        checkedD = findViewById(R.id.drums);
+//        checkedP = findViewById(R.id.piano);
+
+        if (savedInstanceState != null) {
+            drumBool = savedInstanceState.getBoolean("drums");
+            pianoBool = savedInstanceState.getBoolean("piano");
+            //show correct buttons
+            if(drumBool){
+                //show drum buttons and hide piano buttons
+                button5.setVisibility(View.GONE);
+                button6.setVisibility(View.GONE);
+                button7.setVisibility(View.GONE);
+                button8.setVisibility(View.GONE);
+                button1.setVisibility(View.VISIBLE);
+                button2.setVisibility(View.VISIBLE);
+                button3.setVisibility(View.VISIBLE);
+                button4.setVisibility(View.VISIBLE);
+            }else if (pianoBool) {
+                //show piano bool and hide drum bool
+                button1.setVisibility(View.GONE);
+                button2.setVisibility(View.GONE);
+                button3.setVisibility(View.GONE);
+                button4.setVisibility(View.GONE);
+                button5.setVisibility(View.VISIBLE);
+                button6.setVisibility(View.VISIBLE);
+                button7.setVisibility(View.VISIBLE);
+                button8.setVisibility(View.VISIBLE);
+            }
+
+        }
 
         button1 = findViewById(R.id.eight);
         button2 = findViewById(R.id.cowbell);
@@ -121,12 +163,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+//        boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.drums:
-                if (checked)
+                pianoBool = false;
+                drumBool = true;
                 button5.setVisibility(View.GONE);
                 button6.setVisibility(View.GONE);
                 button7.setVisibility(View.GONE);
@@ -137,8 +180,8 @@ public class MainActivity extends AppCompatActivity {
                 button4.setVisibility(View.VISIBLE);
                 break;
             case R.id.piano:
-                if (checked)
-
+                drumBool = false;
+                pianoBool = true;
                 button1.setVisibility(View.GONE);
                 button2.setVisibility(View.GONE);
                 button3.setVisibility(View.GONE);
@@ -152,5 +195,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+        outState.putBoolean("drums", drumBool);
+        outState.putBoolean("piano", pianoBool);
     }
+}
 
