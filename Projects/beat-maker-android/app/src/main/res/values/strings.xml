@@ -6,4 +6,5 @@
     <string name="highhat">high hat</string>
     <string name="kick">kick</string>
     <string name="piano">piano</string>
+    <string name="drums">drums</string>
 </resources>
