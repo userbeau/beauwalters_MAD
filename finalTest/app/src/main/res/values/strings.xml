@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">finalTest</string>
+    <string name="coffee">coffee </string>
+    <string name="coffee_type">Choose your crowd</string>
+    <string name="button">Find coffee</string>
+    <string-array name="crowd">
+        <item>Popular</item>
+        <item>Hipster</item>
+    </string-array>
+    <string name="title_activity_coffee">CoffeeActivity</string>
+    <string name="suggested_coffee">This is your suggested coffee shop</string>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">beauWaltersFinal</string>
+    <string name="heading">Burrito Builder</string>
+    <string name="generate">Generate</string>
+    <string name="favBurrito">favBurrito</string>
+    <string name="burrito">Burrito</string>
+    <string name="taco">Taco</string>
+    <string name="name">name</string>
+    <string name="cheese">cheese</string>
+    <string name="guacamole">guacamole</string>
+    <string name="lettuce">lettuce</string>
+    <string name="salsa">salsa</string>
+    <string name="burritoShop">Shop</string>
+    <string-array name="location">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+    <string name="title_activity_burrito">BurritoActivity</string>
+    <string name="suggested_burrito">This is your suggested burrito shop</string>
+
+</resources>
